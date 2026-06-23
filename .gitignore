@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Training checkpoints ---
+# Intermediate models saved every 50 epochs as test_<i>.h5, plus test.h5.
+# The final submitted model (Emile_DESCROIX-Alexis_MICHEL-Tomil_SHI.h5) is
+# kept in the repo on purpose, so it is not ignored here.
+test.h5
+test_*.h5
+
+# --- Data ---
+# Self-play games consumed by golois (large, course-provided).
+games.data
+*.data
+
+# --- OS / editors ---
+.DS_Store
+.idea/
+.vscode/

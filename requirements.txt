@@ -1,0 +1,8 @@
+# Core dependencies for training and loading the model.
+# Tested with Python 3.12.
+tensorflow>=2.16        # ships Keras 3 (model saved with Keras 3.13)
+numpy>=1.26
+
+# NOTE: data loading relies on `golois`, a compiled C module provided with the
+# course materials. It is NOT available on PyPI and must be obtained and built
+# separately. The training script will not run without it.
